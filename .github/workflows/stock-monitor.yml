@@ -13,6 +13,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python monitor.py --test
+      - run: python monitor.py --once
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
